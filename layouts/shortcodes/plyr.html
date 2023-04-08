@@ -1,0 +1,57 @@
+{{ $repo := .Get "repo" | default "./" }}
+{{ $videoPoster := printf "%s/thumb.webp" $repo }}
+{{ $videoSrc := printf "%s/video/_.m3u8" $repo }}
+{{ $caption := printf "%s/en.vtt" $repo }}
+{{ $spriteVTT := printf "%s/sprite.vtt" $repo }}
+
+{{ $captionLang := .Get "captionLang" | default "en" }}
+{{ $captionLabel := .Get "captionLabel" | default "English" }}
+{{ $videoType := .Get "videoType" | default "video/mp4" }}
+
+{{ $seed := "abcdefghijklmnopqrstuvwxyz" }}
+{{ $videoID := printf "_%s" (delimit (shuffle (split $seed "")) "") }}
+
+<video id="{{ $videoID }}" playsinline controls poster="{{ $videoPoster }}">
+</video>
+
+<script defer>
+  document.addEventListener('DOMContentLoaded', function() {
+    // console.log("{{ printf "plyr%s" $videoID | safeJS }}")
+    // download $caption to temp file and load it to the player
+    fetch('{{ $caption }}')
+      .then(response => response.text())
+      .then(data => {
+        player = document.getElementById('{{ $videoID }}');
+        track = document.createElement('track');
+        track.kind = 'captions';
+        track.label = '{{ $captionLabel }}';
+        track.srclang = '{{ $captionLang }}';
+        track.src = URL.createObjectURL(new Blob([data], {type: 'text/vtt'}));
+        track.default = true;
+        player.appendChild(track);
+    });
+    const {{ printf "plyr%s" $videoID | safeJS }} = Plyr.setup('#{{ $videoID }}', {
+      captions: { active: true, update: true },
+      seekTime: 5,
+      previewThumbnails: {
+        enabled: true,
+        src: '{{ $spriteVTT }}',
+      },
+      iconUrl: '/plyr.svg',
+      invertTime: false,
+    });
+    if (Hls.isSupported()) {
+      let player = document.getElementById('{{ $videoID }}');
+      let hls = new Hls();
+      hls.loadSource('{{ $videoSrc }}');
+      hls.attachMedia(player);
+      {{ printf "plyr%s" $videoID | safeJS }}[0].on('languagechange', function() {
+        setTimeout(function() {
+          hls.subtitleTrack = player.currentTrack;
+        }, 50);
+      });
+    }
+  });
+</script>
+
+{{ $videoSource := .Get "source" | default "" }}

@@ -1,0 +1,10 @@
+{{ $source := .Destination | safeURL }}
+{{ $avif := strings.Replace $source ".webp" ".avif" -1 }}
+
+<figure>
+  <picture>
+    <source type="image/avif" srcset="{{ $avif }}" />
+    <img src="{{ $source }}" alt="{{ .Text }}" type="image/webp" loading="lazy">
+  </picture>
+  {{ if .Title }}<figcaption>{{ .Title }}</figcaption>{{ end }}
+</figure>

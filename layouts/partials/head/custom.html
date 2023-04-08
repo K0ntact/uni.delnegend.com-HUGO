@@ -1,0 +1,41 @@
+{{/*
+- Katex: 0.16.4
+https://www.jsdelivr.com/package/npm/katex?path=dist
+
+- Auto-render: 0.16.4
+https://www.jsdelivr.com/package/npm/katex?path=dist/contrib
+
+- Plyr: 3.7.3
+https://www.jsdelivr.com/package/npm/plyr?path=dist
+
+- Hls.js: 1.3.1
+https://www.jsdelivr.com/package/npm/hls.js?path=dist
+
+*/}}
+
+
+<link rel="stylesheet" href="/katex.min.css">
+<link rel="stylesheet" href="/plyr.css">
+
+<script src="/katex.min.js" defer></script>
+<script src="/auto-render.min.js" defer></script>
+<script src="/plyr.min.js" defer></script>
+<script src="/hls.light.min.js" defer></script>
+
+</script>
+<script defer>
+  // Katex
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+
+  // Set html's tag color-theme="dark" if it doesn't exist or color-theme="light"
+  if (document.querySelector("html").getAttribute("color-theme") != "dark") {
+    document.querySelector("html").setAttribute("color-theme", "dark");
+  }
+</script>

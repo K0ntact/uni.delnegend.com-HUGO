@@ -1,0 +1,7 @@
+{{/*  Constrain the width of an element to a maximum width.  */}}
+{{/*  Usage: {{< max 600 >}} ... {{< /max >}}  */}}
+
+{{ $maxWidth := .Get 0 | default "600" }}
+<div style="max-width: {{ $maxWidth }}px; margin: 0 auto;">
+{{ .Inner }}
+</div>

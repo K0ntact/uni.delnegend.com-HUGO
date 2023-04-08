@@ -1,0 +1,122 @@
+.gdoc-markdown {
+  table:not(.lntable):not(.highlight) tr:nth-child(2n) {
+    background-color: transparent;
+  }
+  img {
+    border-radius: 8px;
+  }
+  hr {
+    border-top: 1px dashed #00FFF4;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+:root {
+  --color-figcaption-dark: rgb(202, 202, 202);
+  --color-figcaption-light: rgb(94, 94, 94);
+}
+
+@mixin dark-stuffs {
+  figcaption {
+    color: var(--color-figcaption-dark);
+  }
+
+  c-blue,
+  c-blue * {
+    --blue: #5890d8;
+    color: var(--blue);
+    --code-font-color: var(--blue);
+
+  }
+}
+
+@mixin light-stuffs {
+  figcaption {
+    color: var(--color-figcaption-light);
+  }
+
+  c-blue,
+  c-blue * {
+    --blue: #1a73e8;
+    color: var(--blue);
+    --code-font-color: var(--blue);
+  }
+}
+
+c-red {
+  --red: #e53935;
+  color: var(--red);
+
+  * {
+    color: var(--red);
+    --code-font-color: var(--red);
+  }
+}
+
+// Dark/light stuffs, don't touch
+@media (prefers-color-scheme: dark) {
+  @include dark-stuffs();
+}
+
+[color-theme=dark] {
+  @include dark-stuffs();
+}
+
+@media (prefers-color-scheme: light) {
+  @include light-stuffs();
+}
+
+[color-theme=light] {
+  @include light-stuffs();
+}
+
+// U can touch now
+
+// fix logo
+@media screen and (max-width: 39rem) {
+  .gdoc-brand {
+    .gdoc-brand__img {
+      display: block;
+    }
+  }
+}
+
+.gdoc-brand {
+  .gdoc-brand__title {
+    margin-bottom: -3px;
+  }
+}
+
+.gdoc-columns {
+  overflow: auto;
+}
+
+
+figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gdoc-nav__entry:hover, .gdoc-nav__entry.is-active, .gdoc-language__entry:hover, .gdoc-language__entry.is-active {
+  text-underline-offset: 3px;
+}
