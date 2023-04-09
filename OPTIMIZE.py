@@ -72,6 +72,10 @@ def main():
             os.remove(f)
 
 if __name__ == "__main__":
+    if shutil.which("ffmpeg") is None:
+        print("ffmpeg not found in PATH")
+        sys.exit(1)
+
     if len(sys.argv) > 1 and sys.argv[1] == "stats":
         total_webp_size = 0
         total_avif_size = 0
