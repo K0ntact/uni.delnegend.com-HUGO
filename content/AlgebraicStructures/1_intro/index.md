@@ -6,7 +6,6 @@ draft: false
 {{<toc>}}
 
 # I. Introduction
-
 ## 1. Algebra (meaning: 'reunion of broken parts')
 - Algebra is the study of mathematical symbols and the rules for manipulating these symbols.
 - It includes the everything from elementary equation solving to the study of abstractions such as **groups**, **rings**, and **fields**.
