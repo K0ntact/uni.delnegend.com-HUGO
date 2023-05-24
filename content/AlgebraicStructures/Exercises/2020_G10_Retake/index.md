@@ -1,5 +1,5 @@
 ---
-title: Gen 10 C. Retake (2020)
+title: 2020. G10 Retake
 draft: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Gen 12 A. Midterm (2023)
+title: 2023. G12 Midterm
 draft: false
 ---
 

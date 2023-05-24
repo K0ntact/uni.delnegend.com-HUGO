@@ -1,5 +1,5 @@
 ---
-title: Gen 11 A. Midterm (2022)
+title: 2022. G11 Midterm
 draft: false
 ---
 

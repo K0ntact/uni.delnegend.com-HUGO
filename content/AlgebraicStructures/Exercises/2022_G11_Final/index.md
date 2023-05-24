@@ -1,10 +1,10 @@
 ---
-title: Gen 11 B. Final (2022)
+title: 2022. G11 Final
 draft: false
 ---
 
 {{%expand "Source"%}}
-![](../2022.Final.webp)
+![](source.webp)
 {{%/expand%}}
 # Problem 1
 - Let $G = \{ x^3, \text{ for all } x \in \mathbb{R} \}$. Is $(G, +)$ a group? Justify your answer.

@@ -1,12 +1,12 @@
 ---
-title: Gen 12 B. Final (2023)
+title: 2023. G12 Final
 draft: false
 ---
 
 # Code 1
 
 {{%expand "Source"%}}
-![](../2023.Final.1.webp)
+![](source_1.webp)
 {{%/expand%}}
 
 ## Problem 1
@@ -37,7 +37,7 @@ Specify your algebra development to justify your answer. Note that the solution 
 # Code 02
 
 {{%expand "Source"%}}
-![](../2023.Final.2.webp)
+![](source_2.webp)
 {{%/expand%}}
 
 ## Problem 1
@@ -69,7 +69,7 @@ Specify your algebra development to justify your answer. Note that the solution 
 # Code 03
 
 {{%expand "Source"%}}
-![](../2023.Final.3.webp)
+![](source_3.webp)
 {{%/expand%}}
 
 ## Problem 1
