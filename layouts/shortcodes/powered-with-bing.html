@@ -1,0 +1,9 @@
+{{/*  use .Get 0 as href if exist, else https://bing.com/  */}}
+{{ $url := .Get 0 | default "https://bing.com/" }}
+
+<div class="bing-ai-container">
+    <a class="bing-ai" href="{{ $url }}">
+        <span> Powered with </span>
+        <img src="/bing.svg" alt="">
+    </a>
+</div>

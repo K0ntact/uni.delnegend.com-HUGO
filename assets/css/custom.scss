@@ -2,9 +2,11 @@
   table:not(.lntable):not(.highlight) tr:nth-child(2n) {
     background-color: transparent;
   }
+
   img {
     border-radius: 8px;
   }
+
   hr {
     border-top: 1px dashed #00FFF4;
   }
@@ -16,6 +18,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+
   figure {
     display: flex;
     align-items: center;
@@ -117,6 +120,37 @@ figure {
   flex-direction: column;
 }
 
-.gdoc-nav__entry:hover, .gdoc-nav__entry.is-active, .gdoc-language__entry:hover, .gdoc-language__entry.is-active {
+.gdoc-nav__entry:hover,
+.gdoc-nav__entry.is-active,
+.gdoc-language__entry:hover,
+.gdoc-language__entry.is-active {
   text-underline-offset: 3px;
+}
+
+.bing-ai-container {
+  display: flex;
+  justify-content: end;
+  margin: 1em 0;
+  .bing-ai {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 0.8em;
+    border-radius: 10em;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      transform: scale(1.1);
+    }
+
+    // animate the hover
+    transition: all 0.2s ease-in-out;
+
+    // remove the underline
+    text-decoration: none !important;
+    img {
+      height: 1em;
+      margin-left: 0.5em;
+    }
+  }
 }
