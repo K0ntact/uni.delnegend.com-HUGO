@@ -1,5 +1,5 @@
 ---
-title: Gen 12 B. Final (2022)
+title: 2022. G12 Final
 draft: false
 ---
 
