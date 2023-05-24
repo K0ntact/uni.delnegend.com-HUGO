@@ -1,5 +1,5 @@
 ---
-title: Midterm Exam 2022
+title: 2022. G12 Midterm
 draft: false
 ---
 {{<toc>}}
