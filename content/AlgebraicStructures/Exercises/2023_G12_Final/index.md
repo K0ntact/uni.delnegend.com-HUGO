@@ -34,7 +34,7 @@ $\begin{aligned}
 Specify your algebra development to justify your answer. Note that the solution must be integers.
 
 ---
-# Code 02
+# Code 2
 
 {{%expand "Source"%}}
 ![](source_2.webp)
