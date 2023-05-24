@@ -1,5 +1,5 @@
 ---
-title: 6. Fourier Series []
+title: 06. Fourier Series []
 draft: false
 ---
 

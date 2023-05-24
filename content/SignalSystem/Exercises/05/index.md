@@ -1,5 +1,5 @@
 ---
-title: 5. Fourier Series ()
+title: 05. Fourier Series ()
 draft: false
 ---
 
