@@ -1,10 +1,10 @@
 ---
-title: 2022. G11 Retake
+title: 2022. G12 Retake
 draft: false
 ---
 
 {{%expand%}}
-![](01.avif)
+![](source.webp)
 {{%/expand%}}
 
 # Question 1

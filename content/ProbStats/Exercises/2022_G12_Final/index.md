@@ -1,9 +1,7 @@
 ---
-title: Final Exam 2022
+title: 2022. G12 Final
 draft: false
 ---
-
-{{<toc>}}
 
 # Question 1
 Given that $P(A) = 0.7, P(B) = 0.5$ and $P(A|B) = 0.8$. Find
