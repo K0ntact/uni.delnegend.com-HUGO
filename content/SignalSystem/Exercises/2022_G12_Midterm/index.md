@@ -3,12 +3,10 @@ title: 2022. G12 Midterm
 draft: false
 ---
 
-# 0
-There are 8 question, but you have to do only 3 based on your student ID:
-- $q_1 = (3 + (ID \\% 4)) \\% 7 + 1$
-- $q_2 = (4 + (ID \\% 4)) \\% 7 + 1$
-- $q_3 = ID \\% 7 + 1$
-If duplicate, choose any question.
+{{%expand "Source"%}}
+![](source_01.webp)
+![](source_02.webp)
+{{%/expand%}}
 
 # 1. Signals
 Given a continuous signal $x(t)$, and a discrete signal $x[n]$
