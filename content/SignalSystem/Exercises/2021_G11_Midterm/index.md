@@ -1,5 +1,5 @@
 ---
-title: Gen 11 A. Midterm (2021)
+title: 2021. G11 Midterm
 draft: false
 ---
 

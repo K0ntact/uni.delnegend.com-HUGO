@@ -1,5 +1,5 @@
 ---
-title: Gen 11 C. Retake (2022)
+title: 2022. G11 Retake
 draft: false
 ---
 

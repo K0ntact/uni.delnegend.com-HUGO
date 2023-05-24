@@ -1,5 +1,5 @@
 ---
-title: Gen 11 B. Final (2022)
+title: 2022. G11 Final
 draft: false
 ---
 

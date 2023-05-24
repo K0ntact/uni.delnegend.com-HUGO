@@ -1,5 +1,5 @@
 ---
-title: Gen 12 B. Final (2023)
+title: 2023. G12 Final
 draft: false
 ---
 
