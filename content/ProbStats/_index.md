@@ -2,9 +2,9 @@
 title: Probability and Statistics
 ---
 # About
-Prof. TRAN Hoang Tung - ICTLab
-Prof. NGUYEN Minh Huong - ICTLab
-Prof. NGUYEN Mai Chung - Energy Department
+- Prof. TRAN Hoang Tung - ICTLab
+- Prof. NGUYEN Minh Huong - ICTLab
+- Prof. NGUYEN Mai Chung - Energy Department
 
 ---
 # Teaching Plan
