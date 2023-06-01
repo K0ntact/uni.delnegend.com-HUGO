@@ -1,6 +1,6 @@
 ---
 title: Fundamentals of Databases
-author: ["Nguyen Hoang Ha"]
+draft: false
 ---
 # About
 - Lecturer: Nguyen Hoang Ha
