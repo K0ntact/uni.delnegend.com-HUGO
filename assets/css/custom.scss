@@ -131,6 +131,7 @@ figure {
   display: flex;
   justify-content: end;
   margin: 1em 0;
+
   .bing-ai {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5em 0.8em;
@@ -148,9 +149,14 @@ figure {
 
     // remove the underline
     text-decoration: none !important;
+
     img {
       height: 1em;
       margin-left: 0.5em;
     }
   }
+}
+
+.katex-display {
+  overflow: auto hidden;
 }
